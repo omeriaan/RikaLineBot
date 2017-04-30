@@ -6,12 +6,14 @@ from django.views.generic import View
 from django.http import JsonResponse
 
 REPLY_ENDPOINT = 'https://api.line.me/v2/bot/message/reply'
-
+ACCESS_TOKEN = 'MpQk/5nZCgbkE6CKhY02SbkNM9g42hzKMQ6t8WRzqU/CHiFpDqhKF7Wi4ivoueuPMo' \
+               '/0oSLDrR5kJZDh2WOXPa1H9e1fMOu2rxl0tXvTkjTttVQ9MerCVwnFKVZQtjwhag4IdkhQxaIeBT5NcLluLAdB04t89/1O' \
+               '/w1cDnyilFU= '
 
 def post_text(reply_token, text):
     header = {
         "Content-Type": "application/json",
-        "Authorization": "Bearer {ENTER_ACCESS_TOKEN}"
+        "Authorization": "Bearer " + ACCESS_TOKEN
     }
     payload = {
         "replyToken": reply_token,
