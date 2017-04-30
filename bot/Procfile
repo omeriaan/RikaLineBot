@@ -1,0 +1,1 @@
+web: gunicorn bottest.wsgi bot:app --log-file -
