@@ -25,9 +25,6 @@ SECRET_KEY = 'uec%adz6o1!k$ndz1_k^3k(sek^m6#ovy@(snxdqhf8tbcr+f8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -115,6 +112,10 @@ USE_L10N = True
 USE_TZ = True
 
 # 以下を追記
+
+# Allow all host headers
+ALLOWED_HOSTS = ['*']
+
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # Static files (CSS, JavaScript, Images)
