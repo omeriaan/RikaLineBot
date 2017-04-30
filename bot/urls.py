@@ -4,5 +4,5 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.ViewSet.as_view()),
+    url(r'^callback', views.ViewSet.as_view()),
 ]

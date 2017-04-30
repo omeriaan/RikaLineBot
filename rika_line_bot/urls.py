@@ -18,5 +18,5 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^callback/', include('bot.urls')),
+    url(r'^bot/', include('bot.urls')),
 ]
